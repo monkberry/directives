@@ -1,0 +1,34 @@
+{
+  "name": "monkberry-directives",
+  "version": "0.0.1",
+  "description": "Monkberry directives",
+  "main": "lib/index.js",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -d lib/ src/",
+    "watch": "babel -w -d lib/ src/",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkberry/directives.git"
+  },
+  "keywords": [
+    "monkberry"
+  ],
+  "author": "Anton Medvedev <anton@medv.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monkberry/directives/issues"
+  },
+  "homepage": "https://github.com/monkberry/directives#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
