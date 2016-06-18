@@ -1,6 +1,17 @@
+import { Show, Hide } from './ShowHide';
+import { FadeIn } from './FadeIn';
 import EventListener from './EventListener';
 
 export default {
+  // Show and hide
+  show: Show,
+  hide: Hide,
+  
+  // Fade in
+  fadeIn: FadeIn,
+
+  // Event listeners
+
   onclick: class extends EventListener {
     constructor() {
       super('click');

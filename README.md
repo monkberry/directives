@@ -16,6 +16,45 @@ import directives from 'monkberry-directives';
 const view = Monkberry.render(Component, document.body, {directives});
 ```
 
+## Show and hide
+
+With this two directives you can easily show/hide don nodes. But how it's different from `{% if %}`? 
+Then using if expression, node completely removes from document. Show/hide directives do not remove node from document, 
+but only change `display` style.
+     
+```twig
+<div :show={{ visible }}>
+    ...
+</div>
+```
+
+```twig
+<div :hide={{ visible }}>
+    ...
+</div>
+```
+
+## FadeIn
+
+This directive allow to show a little opacity animation using CSS transition on nodes what just appears in document.
+For example if you want to show each item of for with fading effect.
+
+```twig
+{% for array %}
+    <li :fadeIn>{{ text }}</li>
+{% endfor %}
+```
+
+Each of element will be shown with fading effect. You can also specify duration in ms.
+
+```twig
+{% if visible %}
+    <div :fadeIn="1000">
+        ...
+    </div>
+{% endif %}
+```
+
 ## Event listeners
 
 List of supported event listeners:
