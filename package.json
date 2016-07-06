@@ -1,6 +1,6 @@
 {
   "name": "monkberry-directives",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "Monkberry directives",
   "main": "lib/index.js",
   "babel": {
